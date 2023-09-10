@@ -5,6 +5,9 @@ from .components.navbar import navbar
 from .components.header import header
 from .components.about import about
 from .components.posts import posts
+from .components.datascience import datascience
+from .components.market import market
+
 
 
 def index():
@@ -25,6 +28,20 @@ def index():
     )
 
 
+# Add state and page to the app.
+app=rx.App()
+app.add_page(index)
+app.add_page(about, route="/about")
+app.add_page(posts, route="/posts")
+app.add_page(datascience, route='/datascience')
+app.add_page(market, route='/market')
+app.compile()
+
+
+
+
+"""
+# desarrollo de codigo alternativo
 def about():
     return rx.container(
         rx.container(
@@ -191,16 +208,4 @@ def market():
         height="100vh",
         bg="#FEF9E7",
     )
-
-
-
-
-
-# Add state and page to the app.
-app=rx.App()
-app.add_page(index)
-app.add_page(about, route="/about")
-app.add_page(posts, route="/posts")
-app.add_page(datascience)
-app.add_page(market)
-app.compile()
+"""
