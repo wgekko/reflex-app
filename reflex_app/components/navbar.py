@@ -14,10 +14,16 @@ def navbar():
                 rx.menu_button('Menu'),
                 rx.menu_list(
                     rx.menu_item(
-                            rx.link('About', href='/about')
+                            rx.link('Reflex', href='/about')
                         ),
                     rx.menu_item(
-                        rx.link('Posts', href='/posts')
+                        rx.link('Tutorial', href='/posts')
+                    ),
+                    rx.menu_item(
+                        rx.link('Gráficos DataScience', href='/datascience')
+                    ),
+                    rx.menu_item(
+                        rx.link('Gráficos Mercados', href='/market')
                     )
                     
                 )

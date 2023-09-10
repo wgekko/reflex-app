@@ -19,10 +19,7 @@ def header():
         rx.center(
             rx.box(
                 rx.heading('Soy Walter!!!', size='xl'),
-                rx.heading('Desarrollador Python', size='lg'),
-                rx.button('Click aqui', margin_top='2rem', 
-                on_click=MyState.get_quote),                
-                quote()
+                rx.heading('Desarrollador Python', size='lg'),                
             )
         ),
         rx.center(

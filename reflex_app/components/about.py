@@ -6,9 +6,8 @@ def about():
             rx.box(
                 rx.heading('Soy Walter!!!', size='xl'),
                 rx.heading('Desarrollador Python', size='lg'),
-                #rx.button('Click aqui', margin_top='2rem', 
-                #on_click=MyState.get_quote),                
-                #quote()
+                rx.text('pagina about')                
+                
             )
         ),
         rx.center(
